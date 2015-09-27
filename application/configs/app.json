@@ -1,0 +1,50 @@
+{
+  "development": {
+    "_extends": "testing"
+  },
+  "staging": {
+    "_extends": "production"
+  },
+  "testing": {
+    "_extends": "staging",
+    "phpSettings": {
+      "display_errors": true,
+      "display_startup_errors": true
+    }
+  },
+  "production": {
+    "appnamespace": "",
+    "bootstrap": {
+      "class": "Bootstrap",
+      "path": "APPLICATION_PATH/Bootstrap.php"
+    },
+    "config": {
+      "router": "APPLICATION_PATH/configs/routes.json"
+    },
+    "phpSettings": {
+      "default_charset": "utf-8",
+      "display_errors": false,
+      "display_startup_errors": false
+    },
+    "resources": {
+      "frontController": {
+        "defaultModule": "default",
+        "moduleDirectory": "APPLICATION_PATH/modules",
+        "params": {
+          "displayExceptions": true,
+          "prefixDefaultModule": true
+        }
+      },
+      "layout": {
+        "layout": "default/layout",
+        "layoutPath": "APPLICATION_PATH/layouts"
+      },
+      "modules": [],
+      "view": {
+        "helperPath": {
+          "Helper": "APPLICATION_PATH/views/helpers"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "development": {
+    "_extends": "production"
+  },
+  "staging": {
+    "_extends": "production"
+  },
+  "testing": {
+    "_extends": "production"
+  },
+  "production": {
+    "resources": {
+      "router": {
+        "routes": {
+        }
+      }
+    }
+  }
+}

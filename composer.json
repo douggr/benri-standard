@@ -1,0 +1,9 @@
+{
+  "description": "\"Benri Standard Edition\" distribution",
+  "license": "MIT",
+  "name": "douggr/benri-standard",
+  "require": {
+    "douggr/benri": "^1.2"
+  },
+  "type": "project"
+}

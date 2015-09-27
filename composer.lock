@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "de71b51f623f748602d63b1f51a1bd77",
+    "packages": [
+        {
+            "name": "douggr/benri",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/douggr/benri.git",
+                "reference": "8d4c07cc24b79898ea4062d4850b32fd6b7045ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/douggr/benri/zipball/8d4c07cc24b79898ea4062d4850b32fd6b7045ca",
+                "reference": "8d4c07cc24b79898ea4062d4850b32fd6b7045ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "extension",
+            "autoload": {
+                "psr-0": {
+                    "Benri_": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "ZF1",
+                "framework",
+                "handy",
+                "rest",
+                "zend"
+            ],
+            "time": "2015-09-19 03:16:56"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
