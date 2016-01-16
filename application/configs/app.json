@@ -19,6 +19,7 @@
       "path": "APPLICATION_PATH/Bootstrap.php"
     },
     "config": {
+      "database": "APPLICATION_PATH/configs/database.php",
       "router": "APPLICATION_PATH/configs/routes.json"
     },
     "phpSettings": {
