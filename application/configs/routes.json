@@ -1,12 +1,6 @@
 {
   "development": {
-    "_extends": "production"
-  },
-  "staging": {
-    "_extends": "production"
-  },
-  "testing": {
-    "_extends": "production"
+    "_extends": "testing"
   },
   "production": {
     "resources": {
@@ -15,5 +9,11 @@
         }
       }
     }
+  },
+  "staging": {
+    "_extends": "production"
+  },
+  "testing": {
+    "_extends": "staging"
   }
 }

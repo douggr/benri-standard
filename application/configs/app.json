@@ -2,16 +2,6 @@
   "development": {
     "_extends": "testing"
   },
-  "staging": {
-    "_extends": "production"
-  },
-  "testing": {
-    "_extends": "staging",
-    "phpSettings": {
-      "display_errors": true,
-      "display_startup_errors": true
-    }
-  },
   "production": {
     "appnamespace": "",
     "bootstrap": {
@@ -29,7 +19,7 @@
     },
     "resources": {
       "frontController": {
-        "defaultModule": "default",
+        "defaultModule": "site",
         "moduleDirectory": "APPLICATION_PATH/modules",
         "params": {
           "displayExceptions": true,
@@ -37,15 +27,26 @@
         }
       },
       "layout": {
-        "layout": "default/layout",
+        "layout": "site/layout",
         "layoutPath": "APPLICATION_PATH/layouts"
       },
-      "modules": [],
+      "modules": [
+      ],
       "view": {
         "helperPath": {
           "Helper": "APPLICATION_PATH/views/helpers"
         }
       }
+    }
+  },
+  "staging": {
+    "_extends": "production"
+  },
+  "testing": {
+    "_extends": "staging",
+    "phpSettings": {
+      "display_errors": true,
+      "display_startup_errors": true
     }
   }
 }

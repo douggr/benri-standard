@@ -9,7 +9,7 @@ return [
             'default' => [
                 'adapter'   => 'PDO_PGSQL',
                 'charset'   => 'utf8',
-                'dbname'    => getenv('DATABASE_URL') ?: 'db://forge:forge@localhost/daryl',
+                'dbname'    => getenv('DATABASE_URL') ?: 'db://forge:forge@localhost/test',
                 'host'      => '',
                 'password'  => '',
                 'port'      => '',
