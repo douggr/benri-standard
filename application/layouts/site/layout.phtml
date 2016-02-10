@@ -13,7 +13,7 @@
         // specific stylesheets for this layout
         echo $this->partial('site/assets/stylesheet.phtml') ?>
   </head>
-  <body>
+  <body class="<?php printf('env-%s mod-%s', APPLICATION_ENV, Zend_Controller_Front::getInstance()->getRequest()->getParam('module')) ?>">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong>
           browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
