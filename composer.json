@@ -3,7 +3,7 @@
   "license": "MIT",
   "name": "douggr/benri-standard",
   "require": {
-    "douggr/benri": "^1.2"
+    "douggr/benri": "^1"
   },
   "type": "project"
 }
